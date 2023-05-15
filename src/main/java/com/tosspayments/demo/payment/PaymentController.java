@@ -32,7 +32,7 @@ public class PaymentController {
             throw new RuntimeException("해킹의심 : 결제 요청 금액이 50,000원이 아닙니다.");
         }
 
-        String secretKey = "test_sk_jkYG57Eba3GgM1wB0a53pWDOxmA1:";
+        String secretKey = "test_sk_XLkKEypNArWPj2PBlPA8lmeaxYG5:";
 
         Base64.Encoder encoder = Base64.getEncoder();
         byte[] encodedBytes = encoder.encode(secretKey.getBytes("UTF-8"));
